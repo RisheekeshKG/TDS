@@ -20,4 +20,9 @@ jobs:
           key: cache-0f09db0
 
       - name: prime-cache-0f09db0
-        run: echo "Cache result: ${{ steps.cache-deps.outputs.cache-hit }}"
+        run: |
+          if [ "${{ steps.cache-deps.outputs.cache-hit }}" == "true" ]; then
+            echo "Cache result: hit"
+          else
+            echo "Cache result: miss"
+          fi
