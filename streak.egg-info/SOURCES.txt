@@ -1,0 +1,7 @@
+setup.py
+streak.py
+streak.egg-info/PKG-INFO
+streak.egg-info/SOURCES.txt
+streak.egg-info/dependency_links.txt
+streak.egg-info/top_level.txt
+tests/test_streak.py
